@@ -1,4 +1,4 @@
 # Aco-Chatbot
 
 To use this, you will have to get a key from https://brainshop.ai/.
-After creating a brain, you can get an API key and BID. You can replace the api with something like chatterbot or nltk.chat to answer.
+After creating a brain, you can get an API key and BID. You can replace the barinshop API with something like chatterbot or nltk.chat.
