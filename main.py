@@ -6,6 +6,8 @@ import json
 import uuid
  
 app = Flask(__name__)
+myBid = "153894"   # This value can be changed to use your own bot
+myKey = "C8abK8Xqt0iqeEEK"   # This value can be changed to use your own bot
 
 #define app routes
 @app.route("/")
@@ -29,7 +31,7 @@ def get_bot_response():
 
 def give_answer(givenText):
     uid = serial_num()
-    url = "http://api.brainshop.ai/get?bid=<MY-BID>&key=<MY-KEY>&uid=" + uid + "&msg=" + givenText
+    url = "http://api.brainshop.ai/get?bid="+myBid+"&key="+myKey+"&uid="+uid+"&msg="+givenText
     response = requests.get(url)
     parsed = json.loads(response.text)['cnt']
     return parsed
