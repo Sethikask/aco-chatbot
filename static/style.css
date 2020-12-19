@@ -106,13 +106,13 @@ body {
   background: rgba(0,0,0,.1);
 }
 
-.chat-form button {
+#buttonInput {
   background: #1ddced;
   padding: 5px 15px;
   font-size: 30px;
   color: #fff;
   border: none;
-  margin: 0 10px;
+  margin: 0 0 0 10px;
   border-radius: 3px;
   box-shadow: 0 3px 0 #0eb2c1;
   cursor: pointer;
@@ -122,6 +122,26 @@ body {
   -o-transition: background .2s ease;
 }
 
-.chat-form button:hover {
+#buttonInput:hover {
+  background: #13c8d9;
+}
+
+#buttonMic {
+  background: #1ddced;
+  padding: 5px 15px;
+  font-size: 30px;
+  color: #fff;
+  border: none;
+  margin: 0 0 0 10px;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #0eb2c1;
+  cursor: pointer;
+
+  -webkit-transition: background .2s ease;
+  -moz-transition: background .2s ease;
+  -o-transition: background .2s ease;
+}
+
+#buttonMic:hover {
   background: #13c8d9;
 }
