@@ -20,7 +20,12 @@ def open_browser():
 
 def serial_num():
     var = str(uuid.uuid1(uuid.getnode(),0))[24:]
-    username = os.getlogin()
+    try:
+        username = os.getlogin()
+    except Exception as e:
+        print(e)
+        print("Unable to get username")
+        username = "Unknown User"
     var = var + "+" + username
     print(var)
     return var
