@@ -4,6 +4,7 @@ import webbrowser
 import requests
 import json
 import uuid
+import os
  
 app = Flask(__name__)
 myBid = "153894"   # This value can be changed to use your own bot
@@ -19,6 +20,8 @@ def open_browser():
 
 def serial_num():
     var = str(uuid.uuid1(uuid.getnode(),0))[24:]
+    username = os.getlogin()
+    var = var + "+" + username
     print(var)
     return var
 
